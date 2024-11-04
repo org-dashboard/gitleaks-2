@@ -110,7 +110,7 @@ func TestDetect(t *testing.T) {
 			expectedFindings: []report.Finding{
 				{
 					Description: "AWS Access Key",
-					Secret:      "AKIALALEMEL33243OLIA",
+
 					Match:       "AKIALALEMEL33243OLIA",
 					Line:        `awsToken := \"AKIALALEMEL33243OLIA\"`,
 					File:        "tmp.go",
