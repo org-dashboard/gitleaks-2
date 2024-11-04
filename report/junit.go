@@ -13,7 +13,7 @@ func writeJunit(findings []Finding, w io.WriteCloser) error {
 		TestSuites: getTestSuites(findings),
 	}
 
-	io.WriteString(w, xml.Header)
+
 	encoder := xml.NewEncoder(w)
 	encoder.Indent("", "\t")
 	return encoder.Encode(testSuites)
