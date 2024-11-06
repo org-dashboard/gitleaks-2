@@ -421,7 +421,7 @@ func TestFromGit(t *testing.T) {
 					EndColumn:   36,
 					Secret:      "AKIALALEMEL33243OLIA",
 					Line:        "\n\taws_token := \"AKIALALEMEL33243OLIA\"",
-					Match:       "AKIALALEMEL33243OLIA",
+
 					Date:        "2021-11-02T23:48:06Z",
 					File:        "foo/foo.go",
 					Commit:      "491504d5a31946ce75e22554cc34203d8e5ff3ca",
