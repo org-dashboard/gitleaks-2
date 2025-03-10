@@ -45,7 +45,7 @@ func NewGitLogCmd(source string, logOpts string) (*GitCmd, error) {
 		}
 
 		args = append(args, userArgs...)
-		cmd = exec.Command("git", args...)
+
 	} else {
 		cmd = exec.Command("git", "-C", sourceClean, "log", "-p", "-U0",
 			"--full-history", "--all")
